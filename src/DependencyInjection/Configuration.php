@@ -519,7 +519,7 @@ class Configuration implements ConfigurationInterface
                             ->scalarNode('template_name')
                                 ->info('Defaults to the name of the index template, but can be modified if the index name is different in ElasticSearch')
                             ->end()
-                            ->scalarNode('template')->isRequired()->end()
+                            ->scalarNode('index_patterns')->isRequired()->end()
                             ->scalarNode('client')->end()
                             ->variableNode('settings')->defaultValue([])->end()
                             ->booleanNode('date_detection')->end()

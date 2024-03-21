@@ -506,7 +506,7 @@ class FOSElasticaExtensionTest extends TestCase
                     ],
                     'index_templates' => [
                         'some_index_template' => [
-                            'template' => 'some_index_template_*',
+                            'index_patterns' => 'some_index_template_*',
                             'client' => 'default',
                             'properties' => ['text' => null],
                         ],

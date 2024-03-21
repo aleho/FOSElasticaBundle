@@ -62,7 +62,7 @@ class MappingBuilder
     public function buildIndexTemplateMapping(IndexTemplateConfig $indexTemplateConfig): array
     {
         $mapping = $this->buildIndexMapping($indexTemplateConfig);
-        $mapping['template'] = $indexTemplateConfig->getTemplate();
+        $mapping['index_patterns'] = $indexTemplateConfig->getIndexPatterns();
 
         return $mapping;
     }
